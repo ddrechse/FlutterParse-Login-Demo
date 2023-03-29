@@ -1,4 +1,4 @@
-# parse_login_demo
+# FlutterParse-Login-Demo
 
 A new Flutter project.
 
