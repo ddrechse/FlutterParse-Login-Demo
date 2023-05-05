@@ -84,6 +84,21 @@ class _PutDataState extends State<PutData> {
   }
 
   enterGameScore(context, playerName, score, cheatModeEnabled) async {
+    var resp = await ParseSession().getCurrentSessionFromServer();
+    if (resp.success) {
+      ParseSession session = resp.result;
+      print(resp.result);
+      session.set("myData", "This is my String");
+      var apiResponse = await session.save();
+      if (apiResponse.success) {
+        print(apiResponse.result);
+      } else {
+        print(apiResponse.error?.message);
+      }
+    } else {
+      print(resp.error?.message);
+    }
+
     var scoreNum = int.parse(score);
     // Create a new Gamescore document
     var gamescoreObject = ParseObject('GameScore')
