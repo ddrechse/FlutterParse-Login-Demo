@@ -25,7 +25,7 @@ void main() async {
 
 // GraphQL Setup
   final HttpLink httpLink = HttpLink(
-    'http://129.80.190.91/graphql',
+    'http://***.**.***.**/graphql',
     defaultHeaders: <String, String>{
       'X-Parse-Application-Id': keyApplicationId,
       'X-Parse-Master-Key': '4O5iFCDAdepqgN8nX556DOlQFQaDj0FxQTexinUJ'
