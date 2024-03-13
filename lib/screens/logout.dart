@@ -3,6 +3,8 @@ import 'package:go_router/go_router.dart';
 import 'package:parse_server_sdk/parse_server_sdk.dart';
 
 class Logout extends StatelessWidget {
+  const Logout({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

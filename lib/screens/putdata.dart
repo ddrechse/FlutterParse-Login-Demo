@@ -61,7 +61,7 @@ class _PutDataState extends State<PutData> {
                         check1 = value;
                       });
                     },
-                    title: Text("CheatMode Enabled?"),
+                    title: const Text("CheatMode Enabled?"),
                   ),
                 ),
                 Container(

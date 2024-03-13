@@ -9,24 +9,26 @@ class HomePage extends StatelessWidget {
   final _tab2navigatorKey = GlobalKey<NavigatorState>();
   final _tab3navigatorKey = GlobalKey<NavigatorState>();
 
+  HomePage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return PersistentBottomBarScaffold(
       items: [
         PersistentTabItem(
-          tab: PutData(),
+          tab: const PutData(),
           icon: Icons.arrow_upward,
           title: 'Enter Gamescores',
           navigatorkey: _tab1navigatorKey,
         ),
         PersistentTabItem(
-          tab: GetData(),
+          tab: const GetData(),
           icon: Icons.arrow_downward,
           title: 'List Gamescores',
           navigatorkey: _tab2navigatorKey,
         ),
         PersistentTabItem(
-          tab: Logout(),
+          tab: const Logout(),
           icon: Icons.logout_sharp,
           title: 'Logout',
           navigatorkey: _tab3navigatorKey,
